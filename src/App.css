@@ -1,0 +1,23 @@
+#root {
+  min-height: 100vh;
+}
+
+.navbar-brand img {
+  filter: invert(1);
+}
+
+.pokemon-card {
+  width: 32rem;
+  margin: auto;
+}
+
+.pokemon-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-image {
+  width: 100%;
+  max-width: 400px;
+}
