@@ -8,8 +8,7 @@ const Navigation = () => {
 
   const isCurrentRoute = (route) => {
     const isCurrent = location.pathname === route;
-    const isPokemonRoute = location.pathname.startsWith("/pokemones/");
-    return isCurrent || (route === "/pokemones" && isPokemonRoute);
+    return isCurrent;
   };
 
   const linkStyle = (route) => {
@@ -31,11 +30,11 @@ const Navigation = () => {
             Home
           </NavLink>
           <NavLink
-            to="/pokemones"
+            to="/favoritos"
             className="ms-3 text-decoration-none"
-            style={linkStyle("/pokemones")}
+            style={linkStyle("/favoritos")}
           >
-            Pokemones
+            Favoritos
           </NavLink>
         </div>
       </Container>

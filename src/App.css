@@ -6,18 +6,24 @@
   filter: invert(1);
 }
 
+.heart-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.heart {
+  color: grey;
+}
+
+.heart.clicked {
+  color: red;
+}
+
 .pokemon-card {
-  width: 32rem;
-  margin: auto;
-}
-
-.pokemon-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pokemon-image {
-  width: 100%;
-  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
 }
